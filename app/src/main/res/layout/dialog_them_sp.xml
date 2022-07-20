@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor=" #000000"
+        android:layout_height="40dp"
+        android:text="Sửa Sản Phẩm"/>
+
+    <ImageView
+        android:id="@+id/editHASPT"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:src="@drawable/anh1" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="369dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Tên truyện: "
+                android:textColor="#001f4d"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTENSPT"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Thể loại: "
+                android:textColor="#001f4d"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edittheloai"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mô Tả"
+                android:textColor="#001f4d"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editMOTASPT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnHuyThem"
+            android:layout_width="160dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Hủy"/>
+        <Button
+            android:id="@+id/btnLuuThem"
+            android:layout_width="160dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Lưu"/>
+    </LinearLayout>
+</LinearLayout>

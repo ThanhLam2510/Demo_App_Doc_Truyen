@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="390dp"
+    android:layout_margin="8dp"
+    android:background="?attr/backgr"
+    android:id="@+id/carview"
+    android:layout_height="180dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237">
+
+        <LinearLayout
+            android:padding="6dp"
+            android:layout_width="370dp"
+            android:layout_height="160dp"
+            android:background="@drawable/boder_4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:padding="1dp"
+                android:background="@drawable/boder_5"
+               >
+                <LinearLayout
+                    android:background="@drawable/boder_6"
+                    android:padding="2dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/imgBaiViet"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/anh12" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/itemTenTieuDe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/allerta"
+                    android:text="Mokushiroku no Yonkishi"
+                    android:textColor="@color/purple_500"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/itemTenNoiDung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/allerta"
+                    android:text="Ten Noi dung"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="?attr/text"
+                    android:textSize="16dp"
+                     />
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/txtLike"
+                        android:layout_width="wrap_content"
+                        android:text="100"
+                        android:textColor="?attr/text"
+                        android:layout_gravity="bottom"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <ImageView
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/baseline_like_up_24"
+                        android:layout_height="wrap_content">
+                    </ImageView>
+                    <TextView
+                        android:layout_marginLeft="2dp"
+                        android:id="@+id/txtXem"
+                        android:layout_width="wrap_content"
+                        android:text="300"
+                        android:textColor="?attr/text"
+                        android:layout_gravity="bottom"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <ImageView
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/baseline_remove_red_eye_24"
+                        android:layout_height="wrap_content">
+                    </ImageView>
+                    <TextView
+                        android:layout_marginLeft="2dp"
+                        android:id="@+id/txtBinhLuan"
+                        android:layout_width="wrap_content"
+                        android:text="200"
+                        android:textColor="?attr/text"
+                        android:layout_gravity="bottom"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <ImageView
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/baseline_chat_24"
+                        android:layout_height="wrap_content">
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/anhn2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_favorite_24"></ImageView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
